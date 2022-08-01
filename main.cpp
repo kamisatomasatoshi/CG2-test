@@ -924,7 +924,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	blenddesc.BlendOpAlpha = D3D12_BLEND_OP_ADD; //加算
 	blenddesc.SrcBlendAlpha = D3D12_BLEND_ONE; //ソースの値を100%使う
 	blenddesc.DestBlendAlpha = D3D12_BLEND_ZERO; //デストの値を0%使う
-	////加算合成
+	//加算合成
 	blenddesc.BlendOp = D3D12_BLEND_OP_ADD; //加算
 	blenddesc.SrcBlend = D3D12_BLEND_ONE; //ソースの値を100%使う
 	blenddesc.DestBlend = D3D12_BLEND_ONE; //デストの値を100%使う
@@ -988,7 +988,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	XMFLOAT3 angle (0.0f,0.0f,0.0f); //カメラの回転
 	XMFLOAT4 objectColor = { 0.0f,0.0f,0.0f,0.5f };
-	int changePhase = 0;
+	//int changePhase = 0;
 	
 	//ゲームループ
 	while (true) {
@@ -1121,7 +1121,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 		keyboard->GetDeviceState(sizeof(key), key);
 
-		if (changePhase == 0)
+		/*if (changePhase == 0)
 		{
 			objectColor.x += 0.005f;
 			if (objectColor.x > 1)
@@ -1158,10 +1158,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			{
 				objectColor.y -= 0.005f;
 			}
-		}
+		}*/
 
 		
-		constMapMaterial->color = objectColor;
+		//constMapMaterial->color = objectColor;
 		//-------DireceX毎フレーム処理　ここまで--------//
 		
 
